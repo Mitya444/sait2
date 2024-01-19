@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scam Form</title>
+</head>
+<body>
+
+    <h1>Scam Form</h1>
+
+    <form action="/submit" method="post">
+        <label for="age">Вам є 18 років?</label>
+        <input type="radio" name="age" value="yes"> Так
+        <input type="radio" name="age" value="no"> Ні <br>
+
+        <label for="mcdonalds">Любите McDonald's?</label>
+        <input type="checkbox" name="mcdonalds" value="yes"> Так <br>
+
+        <label for="phone">Який ваш номер телефону?</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Введіть номер телефону" required> <br>
+
+        <label for="favorite_color">Ваш улюблений бургер?</label>
+        <input type="text" name="favorite_burger" placeholder="Введіть ваш улюблений бургер"> <br>
+
+        <input type="submit" value="Надіслати">
+    </form>
+
+</body>
+</html>
